@@ -14,6 +14,7 @@ const createEmp = async (req, res) => {
     res.status(500).json({ error: "Failed to create a employee" });
   }
 };
+
 const getEmp = async (req, res) => {
   try {
     const result = await db.query("select * from emp");
@@ -48,6 +49,7 @@ const updateEmp = async (req, res) => {
     res.status(500).json({ error: "Failed to update employee" });
   }
 };
+
 const delEmp = async (req, res) => {
   try {
     const empId = req.params.id;
