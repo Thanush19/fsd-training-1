@@ -1,4 +1,5 @@
 --psql -h pg.neon.tech
+-- psql
 CREATE TABLE emp (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
