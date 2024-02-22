@@ -1,0 +1,131 @@
+{
+  "crops": [
+    {
+      "name": "Paddy",
+      "varieties": ["Ponni", "Kichadi Samba"],
+      "preferred_locations": [
+        "Thanjavur",
+        "Tiruvarur",
+        "Tiruvallur",
+        "Kancheepuram",
+        "Villupuram",
+        "Cuddalore",
+        "Tirunelveli"
+      ],
+      "seasons": ["Kharif"],
+      "soil_texture": ["Alluvial"],
+      "future_demand": "High"
+    },
+    {
+      "name": "Millets",
+      "varieties": ["Sorghum", "Ragi", "Bajra"],
+      "preferred_locations": {
+        "Sorghum": ["Coimbatore Plateau", "Kambam Valley"],
+        "Ragi": ["Coimbatore", "Dharmapuri", "Vellore", "Cuddalore"],
+        "Bajra": [
+          "Ramanathapuram",
+          "Tirunelveli",
+          "Karur",
+          "Perambalur",
+          "Salem"
+        ]
+      },
+      "seasons": ["Kharif", "Rabi"],
+      "soil_texture": ["Loamy", "Sandy"],
+      "future_demand": "Moderate"
+    },
+    {
+      "name": "Pulses",
+      "varieties": [
+        "Bengal gram",
+        "Black gram",
+        "Green gram",
+        "Cowpea",
+        "Horse gram"
+      ],
+      "preferred_locations": {
+        "Bengal gram": ["Coimbatore"],
+        "Black gram": ["Tiruvarur", "Nagapattinam", "Thoothukudi"],
+        "Green gram": ["Tiruvarur", "Nagapattinam", "Thoothukudi"],
+        "Horse gram": ["Dharmapuri", "Krishnagiri"]
+      },
+      "seasons": ["Rabi"],
+      "soil_texture": ["Loamy", "Sandy"],
+      "future_demand": "High"
+    },
+    {
+      "name": "Oil Seeds",
+      "varieties": [
+        "Groundnut",
+        "Gingelly",
+        "Castor",
+        "Coconut",
+        "Sunflower",
+        "Mustard"
+      ],
+      "preferred_locations": {
+        "Groundnut": [
+          "Vellore",
+          "Tiruvannamalai",
+          "Villupuram",
+          "Salem",
+          "Pudukottai"
+        ],
+        "Coconut": ["Coimbatore", "Thanjavur", "Kanyakumari"]
+      },
+      "seasons": ["Kharif", "Rabi"],
+      "soil_texture": ["Loamy", "Sandy"],
+      "future_demand": "Moderate"
+    },
+    {
+      "name": "Sugarcane",
+      "preferred_locations": [
+        "Tiruvallur",
+        "Kancheepuram",
+        "Vellore",
+        "Cuddalore",
+        "Tiruchirapalli",
+        "Coimbatore",
+        "Erode",
+        "Tirunelveli"
+      ],
+      "seasons": ["Whole Year"],
+      "soil_texture": ["Alluvial"],
+      "future_demand": "High"
+    },
+    {
+      "name": "Cotton",
+      "preferred_locations": [
+        "Madurai",
+        "Ramanathapuram",
+        "Virudhunagar",
+        "Tirunelveli",
+        "Thoothukudi",
+        "Salem",
+        "Dharmapuri"
+      ],
+      "seasons": ["Kharif"],
+      "soil_texture": ["Black"],
+      "future_demand": "Moderate"
+    },
+    {
+      "name": "Plantation Crops",
+      "varieties": ["Tea", "Coffee", "Cashew", "Rubber", "Cinchona"],
+      "preferred_locations": {
+        "Tea": ["Nilgiris", "Coimbatore"],
+        "Coffee": [
+          "Western Ghats",
+          "Eastern Ghats",
+          "Dindigul",
+          "Madurai",
+          "Theni",
+          "Salem"
+        ],
+        "Rubber": ["Kanyakumari"]
+      },
+      "seasons": ["Whole Year"],
+      "soil_texture": ["Loamy", "Red"],
+      "future_demand": "Moderate"
+    }
+  ]
+}

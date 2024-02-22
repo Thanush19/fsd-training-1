@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { FaPencilAlt, FaTrashAlt } from "react-icons/fa"; // Import icons
 import BACKEND from "../../constant";
@@ -48,32 +48,34 @@ const EmpList = () => {
 
   return (
     <>
-      <h1>Employee List</h1>
-      <table>
-        <thead>
-          <tr>
-            {/* <th>ID</th> */}
-            <th>Name</th>
-            <th>Department</th>
-            <th>Designation</th>
-            <th>Salary</th>
-            <th>Address</th>
-            <th>Date of Birth</th>
-            <th>Created At</th>
+      <h1 className="mt-10 mb-5 ">Student list </h1>
+      <table className="border border-black">
+        <thead className="border border-black">
+          <tr className="border border-black">
+            <th className="border border-black ">Name</th>
+            <th className="border border-black ">Department</th>
+            <th className="border border-black ">gender</th>
+            <th className="border border-black ">Fees paid</th>
+            <th className="border border-black ">Address</th>
+            <th className="border border-black ">Date of Birth</th>
+            <th className="border border-black ">Created At</th>
             <th>Action</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="border border-black ">
           {emp.map((employee) => (
             <tr key={employee.id}>
-              {/* <td>{employee.id}</td> */}
-              <td>{employee.name}</td>
-              <td>{employee.dept}</td>
-              <td>{employee.desg}</td>
-              <td>{employee.sal}</td>
-              <td>{employee.addr}</td>
-              <td>{new Date(employee.dob).toLocaleDateString()}</td>
-              <td>{new Date(employee.created_at).toLocaleString()}</td>
+              <td className="border border-black ">{employee.name}</td>
+              <td className="border border-black ">{employee.dept}</td>
+              <td className="border border-black ">{employee.desg}</td>
+              <td className="border border-black ">{employee.sal}</td>
+              <td className="border border-black ">{employee.addr}</td>
+              <td className="border border-black ">
+                {new Date(employee.dob).toLocaleDateString()}
+              </td>
+              <td className="border border-black ">
+                {new Date(employee.created_at).toLocaleString()}
+              </td>
               <td>
                 <button onClick={() => handleUpdate(employee)}>
                   <FaPencilAlt /> Update

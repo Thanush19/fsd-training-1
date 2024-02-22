@@ -35,9 +35,9 @@ const Input = () => {
   return (
     <>
       <h1 className="text-center font-bold ">Employee-details</h1>
-      <div className="">
+      <div className="border border-black flex">
         <form onSubmit={handleSubmit}>
-          <div className="">
+          <div className="m-2">
             <label>
               Name:
               <input
@@ -45,10 +45,11 @@ const Input = () => {
                 name="name"
                 value={empInfo.name}
                 onChange={handleChange}
+                className="border border-black "
               />
             </label>
           </div>
-          <div className="">
+          <div className="m-2">
             <label>
               Department
               <input
@@ -56,32 +57,49 @@ const Input = () => {
                 value={empInfo.dept}
                 name="dept"
                 onChange={handleChange}
+                className="border border-black "
               />
             </label>
           </div>
-          <div className="">
+          <div className="m-2">
             <label>
-              Designation:
+              Gender:
               <input
-                type="text "
-                name="desg"
-                value={empInfo.desg}
+                type="radio"
+                name="gender"
+                value="male"
+                checked={empInfo.gender === "male"}
                 onChange={handleChange}
+                className="border border-black"
               />
+              Male
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="gender"
+                value="female"
+                checked={empInfo.gender === "female"}
+                onChange={handleChange}
+                className="border border-black"
+              />
+              Female
             </label>
           </div>
-          <div className="">
+
+          <div className="m-2">
             <label>
-              Salary:
+              Roll no:
               <input
                 type="text "
                 name="sal"
                 value={empInfo.sal}
                 onChange={handleChange}
+                className="border border-black "
               />
             </label>
           </div>
-          <div className="">
+          <div className="m-2">
             <label>
               Date of birth:
               <input
@@ -89,10 +107,11 @@ const Input = () => {
                 name="dob"
                 value={empInfo.dob}
                 onChange={handleChange}
+                className="border border-black "
               />
             </label>
           </div>
-          <div className="">
+          <div className="m-2">
             <label>
               Addrress:
               <input
@@ -100,11 +119,14 @@ const Input = () => {
                 name="addr"
                 value={empInfo.addr}
                 onChange={handleChange}
+                className="border border-black "
               />
             </label>
           </div>
-          <div className="">
-            <button type="submit">Submit</button>
+          <div className="m-2">
+            <button className="bg-black text-white p-2" type="submit">
+              Submit
+            </button>
           </div>
         </form>
       </div>
